@@ -24,7 +24,7 @@ def main(argv):
 	# Add general arguments
 	parser.add_argument('--net_type', help='Type of network model (default ellipse_regression)', choices=['ellreg','segellreg','binned','seg'], default='segellreg')
 	parser.add_argument('--batch_size', help='Batch size of the network (default 5)', type=int, default=5)
-	parser.add_argument('--input_size', help='Frame input size of the network (default 480)', type=int, default=[480,480])
+	parser.add_argument('--input_size', help='Frame input size of the network (default 480)', type=int, default=480)
 
 	# Training parameters
 	parser_train = subparsers.add_parser('Train', help='Training Parameters')
